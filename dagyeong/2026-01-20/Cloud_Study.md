@@ -1,4 +1,4 @@
-# 2026-01-21 학습 기록
+# 2026-01-20 학습 기록
 
 ## 🔗 노션 기록
 👉 https://www.notion.so/1-20-2ee8429c582e80419869f0c20e02b87d?source=copy_link
