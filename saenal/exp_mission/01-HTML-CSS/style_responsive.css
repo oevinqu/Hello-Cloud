@@ -1,0 +1,107 @@
+body {
+    margin: 30px;
+    font-family: "Noto-Serif-KR", Arial, sans-serif, system-ui;
+    width: 80%;
+    max-width: 1024px;
+    display: grid;
+    justify-self: center;
+    grid-template-areas:
+      "header header"
+      "intro intro"
+      "line line"
+      "profile sections";
+    grid-template-rows: 50px 30px 3px 4fr;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+.introduction {
+    grid-area: intro;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+.line {
+    grid-area: line;
+    border: 3px solid #c5e6f1b2;
+    border-radius: 50px;
+}
+
+.profile {
+    grid-area: profile;
+    border-radius: 30px;
+    padding: 20px;
+    background: #cdf2fe99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    bottom: 15px;
+    /**/
+}
+
+.sections {
+    grid-area: sections;
+}
+
+.section {
+    margin: 10px;
+    padding: 5px;
+}
+
+.sct_head {
+    font-family: "Orbit";
+    color: blue;
+    font-size: 25px;
+}
+
+li::marker {
+    color: skyblue;
+}
+
+#pf-img {
+    width: 80%;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+.link-img {
+    width: 40px;
+}
+
+/*화면 크기별 반응형 레이아웃 적용*/
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+          "header"
+          "intro"
+          "line"
+          "profile"
+          "sections";
+        grid-template-columns: 1fr;
+    }
+
+    #pf-img {
+        width: 30%;
+        height: 40%;
+        border-radius: 20px 40px;
+    }
+}

@@ -1,0 +1,65 @@
+body {
+    margin: 30px;
+    font-family: "Noto-Serif-KR", Arial, sans-serif, system-ui;
+    width: 80%;
+    max-width: 1024px;
+    justify-self: center;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+.introduction {
+    margin-top: 5px;
+    justify-self: center;
+}
+
+.line {
+    margin: 10px;
+    border: 3px solid #c5e6f1b2;
+    border-radius: 50px;
+}
+
+.profile {
+    border-radius: 30px;
+    padding: 20px;
+    background: #cdf2fe99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.section {
+    margin: 10px;
+    padding: 5px;
+}
+
+.sct_head {
+    font-family: "Orbit";
+    color: blue;
+    font-size: 25px;
+}
+
+li::marker {
+    color: skyblue;
+}
+
+#pf-img {
+    width: 100px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+.link-img {
+    width: 40px;
+}
